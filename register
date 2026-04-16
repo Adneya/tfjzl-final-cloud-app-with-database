@@ -1,0 +1,6 @@
+﻿Command:
+curl.exe -s -X POST http://localhost:5000/register -H 'Content-Type: application/json' --data-binary @payload.json
+
+Output:
+{"message":"User successfully registered. Now you can login"}
+

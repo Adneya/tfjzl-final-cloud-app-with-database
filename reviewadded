@@ -1,0 +1,6 @@
+﻿Command:
+curl.exe -s -b session.cookie -X PUT "http://localhost:5000/customer/auth/review/1?review=Excellent%20book"
+
+Output:
+{"message":"The book review has been added or modified successfully","reviews":{"adneya7798":"Excellent book"}}
+

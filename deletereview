@@ -1,0 +1,6 @@
+﻿Command:
+curl.exe -s -b session.cookie -X DELETE http://localhost:5000/customer/auth/review/1
+
+Output:
+{"message":"The book review has been deleted successfully","reviews":{}}
+
