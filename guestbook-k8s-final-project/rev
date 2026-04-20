@@ -4,15 +4,13 @@ kubectl rollout history deployment/guestbook --revision=2
 Output:
 deployment.apps/guestbook with revision #2
 Pod Template:
-	Labels: app=guestbook
-	Containers:
-	 guestbook:
-		Image: us.icr.io/adneya/guestbook:v2
-		Port: 3000/TCP
-		Limits:
-			cpu: 5m
-		Requests:
-			cpu: 2m
-	Volumes: <none>
+  Labels: app=guestbook
+  Containers:
+   guestbook:
+    Image: us.icr.io/<sn-labs-namespace>/guestbook:v2
+    Port: 3000/TCP
+    Limits: cpu: 5m
+    Requests: cpu: 2m
+  Volumes: <none>
 
 Exit Code: 0

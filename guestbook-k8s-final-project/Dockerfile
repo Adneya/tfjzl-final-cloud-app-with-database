@@ -7,7 +7,9 @@ RUN npm install --omit=dev && npm cache clean --force
 
 COPY server.js ./
 COPY index.html ./
-COPY index.default.html ./
+COPY script.js ./
+COPY style.css ./
+COPY jquery.min.js ./
 
 EXPOSE 3000
 

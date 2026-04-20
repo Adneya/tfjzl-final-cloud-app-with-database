@@ -7,12 +7,10 @@ Pod Template:
 	Labels: app=guestbook
 	Containers:
 	 guestbook:
-		Image: us.icr.io/adneya/guestbook:v2
+		Image: us.icr.io/<sn-labs-namespace>/guestbook:v2
 		Port: 3000/TCP
-		Limits:
-			cpu: 5m
-		Requests:
-			cpu: 2m
+		Limits: cpu: 5m
+		Requests: cpu: 2m
 	Volumes: <none>
 
 Exit Code: 0

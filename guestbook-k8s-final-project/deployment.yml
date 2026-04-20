@@ -21,7 +21,7 @@ spec:
     spec:
       containers:
       - name: guestbook
-        image: us.icr.io/adneya/guestbook:v2
+        image: us.icr.io/<sn-labs-namespace>/guestbook:v2
         imagePullPolicy: Always
         ports:
         - containerPort: 3000

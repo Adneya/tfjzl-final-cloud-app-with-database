@@ -1,8 +1,8 @@
 Command:
-docker push us.icr.io/adneya/guestbook:v2
+docker push us.icr.io/<sn-labs-namespace>/guestbook:v2
 
 Output:
-The push refers to repository [us.icr.io/adneya/guestbook]
+The push refers to repository [us.icr.io/<sn-labs-namespace>/guestbook]
 6abf7f2df485: Pushed
 90d86c8f0f99: Pushed
 99b12f3e52d4: Pushed
