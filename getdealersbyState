@@ -1,0 +1,15 @@
+Command:
+curl -X GET "http://127.0.0.1:8000/djangoapp/dealers/state/Kansas"
+
+Output:
+{
+  "status": 200,
+  "state": "Kansas",
+  "count": 2,
+  "dealers": [
+    {"id": 12, "full_name": "City Auto Hub", "city": "Wichita"},
+    {"id": 15, "full_name": "Prime Motors", "city": "Topeka"}
+  ]
+}
+
+Exit Code: 0

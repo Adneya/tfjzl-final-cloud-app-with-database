@@ -1,0 +1,24 @@
+Command:
+curl -X GET "http://127.0.0.1:8000/djangoapp/reviews/dealer/15"
+
+Output:
+{
+  "status": 200,
+  "dealer_id": 15,
+  "reviews": [
+    {
+      "name": "Jordan Miles",
+      "purchase": true,
+      "review": "Fantastic dealership support and smooth paperwork.",
+      "sentiment": "positive"
+    },
+    {
+      "name": "Riya Sharma",
+      "purchase": false,
+      "review": "Response time was good and staff were professional.",
+      "sentiment": "positive"
+    }
+  ]
+}
+
+Exit Code: 0

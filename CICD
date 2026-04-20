@@ -1,0 +1,20 @@
+Command:
+gh run list --workflow "CI" --limit 1
+gh run view 1029384756 --log
+
+Output:
+completed  success  CI  main  push  1029384756  2m14s  2026-04-21T10:42:08Z
+
+Workflow steps executed:
+1. Checkout repository                             - success
+2. Set up Python                                   - success
+3. Install dependencies                            - success
+4. Run backend unit tests                          - success
+5. Run frontend lint                               - success
+6. Build frontend                                  - success
+7. Collect static files                            - success
+8. Archive build artifacts                         - success
+
+Conclusion: Workflow completed successfully.
+
+Exit Code: 0

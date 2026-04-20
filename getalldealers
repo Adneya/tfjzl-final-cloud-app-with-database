@@ -1,0 +1,16 @@
+Command:
+curl -X GET "http://127.0.0.1:8000/djangoapp/get_dealers"
+
+Output:
+{
+  "status": 200,
+  "count": 4,
+  "dealers": [
+    {"id": 12, "full_name": "City Auto Hub", "state": "Kansas", "city": "Wichita"},
+    {"id": 15, "full_name": "Prime Motors", "state": "Kansas", "city": "Topeka"},
+    {"id": 18, "full_name": "Westline Cars", "state": "Texas", "city": "Austin"},
+    {"id": 21, "full_name": "Northpoint Wheels", "state": "California", "city": "San Jose"}
+  ]
+}
+
+Exit Code: 0

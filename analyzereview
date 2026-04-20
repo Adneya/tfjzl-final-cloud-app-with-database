@@ -1,0 +1,12 @@
+Command:
+curl -X GET "http://127.0.0.1:8000/djangoapp/analyze/Fantastic%20services"
+
+Output:
+{
+  "status": 200,
+  "text": "Fantastic services",
+  "sentiment": "positive",
+  "score": 0.97
+}
+
+Exit Code: 0
