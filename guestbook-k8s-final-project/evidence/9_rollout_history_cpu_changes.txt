@@ -1,0 +1,11 @@
+Command:
+kubectl rollout history deployment/guestbook
+
+Output:
+deployment.apps/guestbook
+REVISION  CHANGE-CAUSE
+1         kubectl apply --filename=deployment.yml --record=true
+2         kubectl set resources deployment guestbook --requests=cpu=200m --limits=cpu=500m --record=true
+3         kubectl set image deployment/guestbook guestbook=us.icr.io/adneya/guestbook:v2 --record=true
+
+Exit Code: 0

@@ -1,0 +1,11 @@
+Command:
+docker push us.icr.io/adneya/guestbook:v2
+
+Output:
+The push refers to repository [us.icr.io/adneya/guestbook]
+6abf7f2df485: Pushed
+90d86c8f0f99: Pushed
+99b12f3e52d4: Pushed
+v2: digest: sha256:3fcead3dd7c8e2ebf6fd51449d4fd98fca5ba6f0fed312bc8ebce691f32b8e90 size: 948
+
+Exit Code: 0

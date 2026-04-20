@@ -1,0 +1,7 @@
+Command:
+kubectl apply -f deployment.yml
+
+Output:
+deployment.apps/guestbook configured
+
+Exit Code: 0
