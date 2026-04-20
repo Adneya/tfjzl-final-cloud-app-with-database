@@ -1,0 +1,10 @@
+Command:
+ibmcloud cr images | grep guestbook
+
+Output:
+Listing images...
+
+REPOSITORY                    TAG   DIGEST                                                                    NAMESPACE   CREATED         SIZE    SECURITY STATUS
+us.icr.io/adneya/guestbook   v1    sha256:ad70d834f96c60b378c6cb1dc5f4e04417f2a9901d52fca03af88f7f065ece89   adneya      2 minutes ago   17 MB   No Issues
+
+Exit Code: 0
