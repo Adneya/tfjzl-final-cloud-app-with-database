@@ -1,0 +1,8 @@
+File: EmotionDetection/emotion_detection.py
+
+The application function is implemented as:
+
+- emotion_detector(text_to_analyze)
+- Calls Watson NLP EmotionPredict endpoint
+- Returns anger, disgust, fear, joy, sadness, dominant_emotion
+- Handles status code 400 by returning all None values

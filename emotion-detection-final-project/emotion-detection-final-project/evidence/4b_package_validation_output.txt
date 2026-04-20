@@ -1,0 +1,8 @@
+Command:
+"c:/Users/Adneya Khatate/Documents/Coursera/.venv/Scripts/python.exe" -c "import EmotionDetection; print(callable(EmotionDetection.emotion_detector)); print(EmotionDetection.__all__)"
+
+Output:
+True
+['emotion_detector']
+
+Exit Code: 0

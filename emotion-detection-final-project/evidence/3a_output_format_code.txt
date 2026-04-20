@@ -1,0 +1,12 @@
+File: EmotionDetection/emotion_detection.py
+
+Output format implementation:
+
+{
+  'anger': <float|None>,
+  'disgust': <float|None>,
+  'fear': <float|None>,
+  'joy': <float|None>,
+  'sadness': <float|None>,
+  'dominant_emotion': <str|None>
+}

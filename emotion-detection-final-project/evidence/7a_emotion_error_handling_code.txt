@@ -1,0 +1,5 @@
+File: EmotionDetection/emotion_detection.py
+
+Error handling for invalid text:
+- if response.status_code == 400: return result with all None values
+- if text input is blank: returns canonical empty result

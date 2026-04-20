@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 24px;
+            background: #f3f6fb;
+            color: #162033;
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            padding: 24px;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+
+        textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #cad3e1;
+            border-radius: 8px;
+            resize: vertical;
+            box-sizing: border-box;
+        }
+
+        button {
+            margin-top: 12px;
+            background: #1b6ef3;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 16px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        button:hover {
+            background: #0f57cb;
+        }
+
+        #system_response {
+            margin-top: 16px;
+            padding: 12px;
+            border-radius: 8px;
+            background: #eef4ff;
+            border: 1px solid #d6e3ff;
+            min-height: 24px;
+        }
+    </style>
+    <script>
+        async function runEmotionDetection() {
+            const textInput = document.getElementById('textToAnalyze').value;
+            const responseArea = document.getElementById('system_response');
+            const endpoint = `/emotionDetector?textToAnalyze=${encodeURIComponent(textInput)}`;
+
+            const response = await fetch(endpoint);
+            const resultText = await response.text();
+            responseArea.innerText = resultText;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Detection Application</h1>
+        <p>Enter text below and click Analyze to detect emotions.</p>
+        <textarea id="textToAnalyze" placeholder="Type text to analyze..."></textarea>
+        <button onclick="runEmotionDetection()">Analyze Emotion</button>
+        <div id="system_response"></div>
+    </div>
+</body>
+</html>

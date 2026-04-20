@@ -1,0 +1,7 @@
+File: server.py
+
+Flask deployment includes:
+- app = Flask(__name__)
+- route '/' to render UI
+- route '/emotionDetector' to process text
+- app.run(host='0.0.0.0', port=5000)
