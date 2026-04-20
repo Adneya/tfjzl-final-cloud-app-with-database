@@ -1,5 +1,0 @@
-Command used for static analysis:
-
-python -m pylint server.py
-
-Result: 10.00/10

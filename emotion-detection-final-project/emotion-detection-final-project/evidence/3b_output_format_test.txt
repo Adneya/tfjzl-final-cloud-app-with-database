@@ -1,7 +1,0 @@
-Command:
-"c:/Users/Adneya Khatate/Documents/Coursera/.venv/Scripts/python.exe" -c "from EmotionDetection.emotion_detection import emotion_detector; print(emotion_detector('I am really mad about this'))"
-
-Output:
-{'anger': 1.0, 'disgust': 0.0, 'fear': 0.0, 'joy': 0.0, 'sadness': 0.0, 'dominant_emotion': 'anger'}
-
-Exit Code: 0

@@ -1,8 +1,0 @@
-Command:
-"c:/Users/Adneya Khatate/Documents/Coursera/.venv/Scripts/python.exe" -m pylint server.py
-
-Output:
-------------------------------------
-Your code has been rated at 10.00/10
-
-Exit Code: 0

@@ -1,8 +1,0 @@
-File: test_emotion_detection.py
-
-Contains unit tests for dominant emotion values:
-- joy
-- anger
-- disgust
-- sadness
-- fear
