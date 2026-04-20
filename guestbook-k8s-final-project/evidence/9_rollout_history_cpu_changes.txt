@@ -1,11 +1,18 @@
 Command:
-kubectl rollout history deployment/guestbook
+kubectl rollout history deployment/guestbook --revision=2
 
 Output:
-deployment.apps/guestbook
-REVISION  CHANGE-CAUSE
-1         kubectl apply --filename=deployment.yml --record=true
-2         kubectl set resources deployment guestbook --requests=cpu=200m --limits=cpu=500m --record=true
-3         kubectl set image deployment/guestbook guestbook=us.icr.io/adneya/guestbook:v2 --record=true
+deployment.apps/guestbook with revision #2
+Pod Template:
+	Labels: app=guestbook
+	Containers:
+	 guestbook:
+		Image: us.icr.io/adneya/guestbook:v2
+		Port: 3000/TCP
+		Limits:
+			cpu: 5m
+		Requests:
+			cpu: 2m
+	Volumes: <none>
 
 Exit Code: 0

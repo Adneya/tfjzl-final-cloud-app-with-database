@@ -1,9 +1,16 @@
-FROM python:3.11-alpine
+FROM node:20-alpine
 
 WORKDIR /app
 
-COPY index.html /app/index.html
+COPY package*.json ./
+RUN npm install --omit=dev && npm cache clean --force
+
+COPY server.js ./
+COPY index.html ./
+COPY index.default.html ./
 
 EXPOSE 3000
 
-CMD ["python", "-m", "http.server", "3000"]
+USER node
+
+CMD ["node", "server.js"]

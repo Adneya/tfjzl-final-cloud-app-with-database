@@ -1,0 +1,12 @@
+{
+  "name": "guestbook-k8s-app",
+  "version": "1.0.0",
+  "description": "Guestbook app for Kubernetes autoscaling assignment",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

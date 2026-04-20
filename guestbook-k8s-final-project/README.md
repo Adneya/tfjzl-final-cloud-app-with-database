@@ -9,6 +9,8 @@ Guestbook Kubernetes Autoscaling and Rollback
 ## Files Included
 
 - Dockerfile: Updated image build file with COPY and EXPOSE
+- package.json: Node dependencies and start metadata
+- server.js: Node server entrypoint for guestbook app
 - index.default.html: Default Guestbook UI before version update
 - index.html: Updated Guestbook UI for v2
 - deployment.yml: Kubernetes deployment manifest
@@ -41,3 +43,4 @@ kubectl apply -f hpa.yml
 
 - The image path uses us.icr.io/adneya/guestbook as the target registry repository.
 - The updated v2 image uses tag v2.
+- CPU rollout revision details use Requests cpu: 2m and Limits cpu: 5m.
