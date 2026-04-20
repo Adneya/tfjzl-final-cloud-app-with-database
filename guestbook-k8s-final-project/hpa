@@ -1,0 +1,11 @@
+Command:
+kubectl autoscale deployment guestbook --cpu-percent=5 --min=0 --max=10
+kubectl get hpa guestbook
+
+Output:
+horizontalpodautoscaler.autoscaling/guestbook autoscaled
+
+NAME        REFERENCE              TARGETS   MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   0%/5%     0         10        0          18s
+
+Exit Code: 0

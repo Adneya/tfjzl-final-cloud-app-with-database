@@ -1,0 +1,12 @@
+Command:
+kubectl get hpa guestbook
+kubectl get deployment guestbook
+
+Output:
+NAME        REFERENCE              TARGETS    MINPODS   MAXPODS   REPLICAS   AGE
+guestbook   Deployment/guestbook   126%/5%    0         10        4          3m41s
+
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE
+guestbook   4/4     4            4           14m
+
+Exit Code: 0
