@@ -3,14 +3,510 @@ curl -X GET "http://127.0.0.1:8000/djangoapp/get_dealers"
 
 Output:
 {
-  "status": 200,
-  "count": 4,
-  "dealers": [
-    {"id": 12, "full_name": "City Auto Hub", "state": "Kansas", "city": "Wichita"},
-    {"id": 15, "full_name": "Prime Motors", "state": "Kansas", "city": "Topeka"},
-    {"id": 18, "full_name": "Westline Cars", "state": "Texas", "city": "Austin"},
-    {"id": 21, "full_name": "Northpoint Wheels", "state": "California", "city": "San Jose"}
-  ]
+    "status":  200,
+    "count":  50,
+    "dealers":  [
+                    {
+                        "id":  101,
+                        "full_name":  "Dealer Center 1",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "101 Main Street",
+                        "zip":  "60001",
+                        "latitude":  36.571,
+                        "longitude":  -122.417
+                    },
+                    {
+                        "id":  102,
+                        "full_name":  "Dealer Center 2",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "102 Main Street",
+                        "zip":  "60002",
+                        "latitude":  36.642,
+                        "longitude":  -122.334
+                    },
+                    {
+                        "id":  103,
+                        "full_name":  "Dealer Center 3",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "103 Main Street",
+                        "zip":  "60003",
+                        "latitude":  36.713,
+                        "longitude":  -122.251
+                    },
+                    {
+                        "id":  104,
+                        "full_name":  "Dealer Center 4",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "104 Main Street",
+                        "zip":  "60004",
+                        "latitude":  36.784,
+                        "longitude":  -122.168
+                    },
+                    {
+                        "id":  105,
+                        "full_name":  "Dealer Center 5",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "105 Main Street",
+                        "zip":  "60005",
+                        "latitude":  36.855,
+                        "longitude":  -122.085
+                    },
+                    {
+                        "id":  106,
+                        "full_name":  "Dealer Center 6",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "106 Main Street",
+                        "zip":  "60006",
+                        "latitude":  36.926,
+                        "longitude":  -122.002
+                    },
+                    {
+                        "id":  107,
+                        "full_name":  "Dealer Center 7",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "107 Main Street",
+                        "zip":  "60007",
+                        "latitude":  36.997,
+                        "longitude":  -121.919
+                    },
+                    {
+                        "id":  108,
+                        "full_name":  "Dealer Center 8",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "108 Main Street",
+                        "zip":  "60008",
+                        "latitude":  37.068,
+                        "longitude":  -121.836
+                    },
+                    {
+                        "id":  109,
+                        "full_name":  "Dealer Center 9",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "109 Main Street",
+                        "zip":  "60009",
+                        "latitude":  37.139,
+                        "longitude":  -121.753
+                    },
+                    {
+                        "id":  110,
+                        "full_name":  "Dealer Center 10",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "110 Main Street",
+                        "zip":  "60010",
+                        "latitude":  37.21,
+                        "longitude":  -121.67
+                    },
+                    {
+                        "id":  111,
+                        "full_name":  "Dealer Center 11",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "111 Main Street",
+                        "zip":  "60011",
+                        "latitude":  37.281,
+                        "longitude":  -121.587
+                    },
+                    {
+                        "id":  112,
+                        "full_name":  "Dealer Center 12",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "112 Main Street",
+                        "zip":  "60012",
+                        "latitude":  37.352,
+                        "longitude":  -121.504
+                    },
+                    {
+                        "id":  113,
+                        "full_name":  "Dealer Center 13",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "113 Main Street",
+                        "zip":  "60013",
+                        "latitude":  37.423,
+                        "longitude":  -121.421
+                    },
+                    {
+                        "id":  114,
+                        "full_name":  "Dealer Center 14",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "114 Main Street",
+                        "zip":  "60014",
+                        "latitude":  37.494,
+                        "longitude":  -121.338
+                    },
+                    {
+                        "id":  115,
+                        "full_name":  "Dealer Center 15",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "115 Main Street",
+                        "zip":  "60015",
+                        "latitude":  37.565,
+                        "longitude":  -121.255
+                    },
+                    {
+                        "id":  116,
+                        "full_name":  "Dealer Center 16",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "116 Main Street",
+                        "zip":  "60016",
+                        "latitude":  37.636,
+                        "longitude":  -121.172
+                    },
+                    {
+                        "id":  117,
+                        "full_name":  "Dealer Center 17",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "117 Main Street",
+                        "zip":  "60017",
+                        "latitude":  37.707,
+                        "longitude":  -121.089
+                    },
+                    {
+                        "id":  118,
+                        "full_name":  "Dealer Center 18",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "118 Main Street",
+                        "zip":  "60018",
+                        "latitude":  37.778,
+                        "longitude":  -121.006
+                    },
+                    {
+                        "id":  119,
+                        "full_name":  "Dealer Center 19",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "119 Main Street",
+                        "zip":  "60019",
+                        "latitude":  37.849,
+                        "longitude":  -120.923
+                    },
+                    {
+                        "id":  120,
+                        "full_name":  "Dealer Center 20",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "120 Main Street",
+                        "zip":  "60020",
+                        "latitude":  37.92,
+                        "longitude":  -120.84
+                    },
+                    {
+                        "id":  121,
+                        "full_name":  "Dealer Center 21",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "121 Main Street",
+                        "zip":  "60021",
+                        "latitude":  37.991,
+                        "longitude":  -120.757
+                    },
+                    {
+                        "id":  122,
+                        "full_name":  "Dealer Center 22",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "122 Main Street",
+                        "zip":  "60022",
+                        "latitude":  38.062,
+                        "longitude":  -120.674
+                    },
+                    {
+                        "id":  123,
+                        "full_name":  "Dealer Center 23",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "123 Main Street",
+                        "zip":  "60023",
+                        "latitude":  38.133,
+                        "longitude":  -120.591
+                    },
+                    {
+                        "id":  124,
+                        "full_name":  "Dealer Center 24",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "124 Main Street",
+                        "zip":  "60024",
+                        "latitude":  38.204,
+                        "longitude":  -120.508
+                    },
+                    {
+                        "id":  125,
+                        "full_name":  "Dealer Center 25",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "125 Main Street",
+                        "zip":  "60025",
+                        "latitude":  38.275,
+                        "longitude":  -120.425
+                    },
+                    {
+                        "id":  126,
+                        "full_name":  "Dealer Center 26",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "126 Main Street",
+                        "zip":  "60026",
+                        "latitude":  38.346,
+                        "longitude":  -120.342
+                    },
+                    {
+                        "id":  127,
+                        "full_name":  "Dealer Center 27",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "127 Main Street",
+                        "zip":  "60027",
+                        "latitude":  38.417,
+                        "longitude":  -120.259
+                    },
+                    {
+                        "id":  128,
+                        "full_name":  "Dealer Center 28",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "128 Main Street",
+                        "zip":  "60028",
+                        "latitude":  38.488,
+                        "longitude":  -120.176
+                    },
+                    {
+                        "id":  129,
+                        "full_name":  "Dealer Center 29",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "129 Main Street",
+                        "zip":  "60029",
+                        "latitude":  38.559,
+                        "longitude":  -120.093
+                    },
+                    {
+                        "id":  130,
+                        "full_name":  "Dealer Center 30",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "130 Main Street",
+                        "zip":  "60030",
+                        "latitude":  38.63,
+                        "longitude":  -120.01
+                    },
+                    {
+                        "id":  131,
+                        "full_name":  "Dealer Center 31",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "131 Main Street",
+                        "zip":  "60031",
+                        "latitude":  38.701,
+                        "longitude":  -119.927
+                    },
+                    {
+                        "id":  132,
+                        "full_name":  "Dealer Center 32",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "132 Main Street",
+                        "zip":  "60032",
+                        "latitude":  38.772,
+                        "longitude":  -119.844
+                    },
+                    {
+                        "id":  133,
+                        "full_name":  "Dealer Center 33",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "133 Main Street",
+                        "zip":  "60033",
+                        "latitude":  38.843,
+                        "longitude":  -119.761
+                    },
+                    {
+                        "id":  134,
+                        "full_name":  "Dealer Center 34",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "134 Main Street",
+                        "zip":  "60034",
+                        "latitude":  38.914,
+                        "longitude":  -119.678
+                    },
+                    {
+                        "id":  135,
+                        "full_name":  "Dealer Center 35",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "135 Main Street",
+                        "zip":  "60035",
+                        "latitude":  38.985,
+                        "longitude":  -119.595
+                    },
+                    {
+                        "id":  136,
+                        "full_name":  "Dealer Center 36",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "136 Main Street",
+                        "zip":  "60036",
+                        "latitude":  39.056,
+                        "longitude":  -119.512
+                    },
+                    {
+                        "id":  137,
+                        "full_name":  "Dealer Center 37",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "137 Main Street",
+                        "zip":  "60037",
+                        "latitude":  39.127,
+                        "longitude":  -119.429
+                    },
+                    {
+                        "id":  138,
+                        "full_name":  "Dealer Center 38",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "138 Main Street",
+                        "zip":  "60038",
+                        "latitude":  39.198,
+                        "longitude":  -119.346
+                    },
+                    {
+                        "id":  139,
+                        "full_name":  "Dealer Center 39",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "139 Main Street",
+                        "zip":  "60039",
+                        "latitude":  39.269,
+                        "longitude":  -119.263
+                    },
+                    {
+                        "id":  140,
+                        "full_name":  "Dealer Center 40",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "140 Main Street",
+                        "zip":  "60040",
+                        "latitude":  39.34,
+                        "longitude":  -119.18
+                    },
+                    {
+                        "id":  141,
+                        "full_name":  "Dealer Center 41",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "141 Main Street",
+                        "zip":  "60041",
+                        "latitude":  39.411,
+                        "longitude":  -119.097
+                    },
+                    {
+                        "id":  142,
+                        "full_name":  "Dealer Center 42",
+                        "city":  "San Jose",
+                        "state":  "California",
+                        "address":  "142 Main Street",
+                        "zip":  "60042",
+                        "latitude":  39.482,
+                        "longitude":  -119.014
+                    },
+                    {
+                        "id":  143,
+                        "full_name":  "Dealer Center 43",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "143 Main Street",
+                        "zip":  "60043",
+                        "latitude":  39.553,
+                        "longitude":  -118.931
+                    },
+                    {
+                        "id":  144,
+                        "full_name":  "Dealer Center 44",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "144 Main Street",
+                        "zip":  "60044",
+                        "latitude":  39.624,
+                        "longitude":  -118.848
+                    },
+                    {
+                        "id":  145,
+                        "full_name":  "Dealer Center 45",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "145 Main Street",
+                        "zip":  "60045",
+                        "latitude":  39.695,
+                        "longitude":  -118.765
+                    },
+                    {
+                        "id":  146,
+                        "full_name":  "Dealer Center 46",
+                        "city":  "Buffalo",
+                        "state":  "New York",
+                        "address":  "146 Main Street",
+                        "zip":  "60046",
+                        "latitude":  39.766,
+                        "longitude":  -118.682
+                    },
+                    {
+                        "id":  147,
+                        "full_name":  "Dealer Center 47",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "147 Main Street",
+                        "zip":  "60047",
+                        "latitude":  39.837,
+                        "longitude":  -118.599
+                    },
+                    {
+                        "id":  148,
+                        "full_name":  "Dealer Center 48",
+                        "city":  "Austin",
+                        "state":  "Texas",
+                        "address":  "148 Main Street",
+                        "zip":  "60048",
+                        "latitude":  39.908,
+                        "longitude":  -118.516
+                    },
+                    {
+                        "id":  149,
+                        "full_name":  "Dealer Center 49",
+                        "city":  "Orlando",
+                        "state":  "Florida",
+                        "address":  "149 Main Street",
+                        "zip":  "60049",
+                        "latitude":  39.979,
+                        "longitude":  -118.433
+                    },
+                    {
+                        "id":  150,
+                        "full_name":  "Dealer Center 50",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "150 Main Street",
+                        "zip":  "60050",
+                        "latitude":  40.05,
+                        "longitude":  -118.35
+                    }
+                ]
 }
 
 Exit Code: 0

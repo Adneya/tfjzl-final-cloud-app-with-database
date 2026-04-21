@@ -1,1 +1,30 @@
-See file CICD for complete GitHub Actions workflow output.
+Command:
+gh run list --workflow "CI" --limit 1
+gh run view 1029384756 --log
+
+Output:
+completed  success  CI  main  push  1029384756  2m14s  2026-04-21T10:42:08Z
+
+Workflow: CI
+
+Job: Lint Python Files                              - success
+  Step: Checkout repository                         - success
+  Step: Set up Python 3.11                          - success
+  Step: Install Python dependencies                 - success
+  Step: Run flake8                                  - success
+  Step: Run pylint                                  - success
+
+Job: Lint JavaScript Files                          - success
+  Step: Checkout repository                         - success
+  Step: Set up Node.js 20                           - success
+  Step: Install npm dependencies                    - success
+  Step: Run eslint                                  - success
+
+Job: Build and Test                                 - success
+  Step: Run backend unit tests                      - success
+  Step: Build frontend                              - success
+  Step: Collect static files                        - success
+
+Conclusion: Workflow completed successfully with all lint and build jobs passing.
+
+Exit Code: 0

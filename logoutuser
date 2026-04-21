@@ -1,7 +1,10 @@
 Command:
-curl -X GET http://127.0.0.1:8000/djangoapp/logout -b cookies.txt
+curl -X GET "http://127.0.0.1:8000/djangoapp/logout"
 
 Output:
-{"status": 200, "message": "User logged out successfully"}
+{
+  "userName": "",
+  "status": "Logged out"
+}
 
 Exit Code: 0

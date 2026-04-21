@@ -3,24 +3,69 @@ curl -X GET "http://127.0.0.1:8000/djangoapp/get_cars"
 
 Output:
 {
-  "status": 200,
-  "CarMakes": [
-    {
-      "id": 1,
-      "name": "Toyota",
-      "models": ["Camry", "Corolla", "RAV4"]
-    },
-    {
-      "id": 2,
-      "name": "Honda",
-      "models": ["Civic", "Accord", "CR-V"]
-    },
-    {
-      "id": 3,
-      "name": "Ford",
-      "models": ["F-150", "Escape", "Mustang"]
-    }
-  ]
+    "status":  200,
+    "CarModels":  [
+                      {
+                          "model":  "Corolla",
+                          "make":  "Toyota"
+                      },
+                      {
+                          "model":  "Camry",
+                          "make":  "Toyota"
+                      },
+                      {
+                          "model":  "RAV4",
+                          "make":  "Toyota"
+                      },
+                      {
+                          "model":  "Civic",
+                          "make":  "Honda"
+                      },
+                      {
+                          "model":  "Accord",
+                          "make":  "Honda"
+                      },
+                      {
+                          "model":  "CR-V",
+                          "make":  "Honda"
+                      },
+                      {
+                          "model":  "Mustang",
+                          "make":  "Ford"
+                      },
+                      {
+                          "model":  "Escape",
+                          "make":  "Ford"
+                      },
+                      {
+                          "model":  "F-150",
+                          "make":  "Ford"
+                      },
+                      {
+                          "model":  "Altima",
+                          "make":  "Nissan"
+                      },
+                      {
+                          "model":  "Sentra",
+                          "make":  "Nissan"
+                      },
+                      {
+                          "model":  "Rogue",
+                          "make":  "Nissan"
+                      },
+                      {
+                          "model":  "Elantra",
+                          "make":  "Hyundai"
+                      },
+                      {
+                          "model":  "Tucson",
+                          "make":  "Hyundai"
+                      },
+                      {
+                          "model":  "Malibu",
+                          "make":  "Chevrolet"
+                      }
+                  ]
 }
 
 Exit Code: 0

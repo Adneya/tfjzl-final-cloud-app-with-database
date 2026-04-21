@@ -3,13 +3,51 @@ curl -X GET "http://127.0.0.1:8000/djangoapp/dealers/state/Kansas"
 
 Output:
 {
-  "status": 200,
-  "state": "Kansas",
-  "count": 2,
-  "dealers": [
-    {"id": 12, "full_name": "City Auto Hub", "city": "Wichita"},
-    {"id": 15, "full_name": "Prime Motors", "city": "Topeka"}
-  ]
+    "status":  200,
+    "state":  "Kansas",
+    "count":  4,
+    "dealers":  [
+                    {
+                        "id":  105,
+                        "full_name":  "Dealer Center 5",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "105 Main Street",
+                        "zip":  "60005",
+                        "latitude":  36.855,
+                        "longitude":  -122.085
+                    },
+                    {
+                        "id":  110,
+                        "full_name":  "Dealer Center 10",
+                        "city":  "Topeka",
+                        "state":  "Kansas",
+                        "address":  "110 Main Street",
+                        "zip":  "60010",
+                        "latitude":  37.21,
+                        "longitude":  -121.67
+                    },
+                    {
+                        "id":  115,
+                        "full_name":  "Dealer Center 15",
+                        "city":  "Wichita",
+                        "state":  "Kansas",
+                        "address":  "115 Main Street",
+                        "zip":  "60015",
+                        "latitude":  37.565,
+                        "longitude":  -121.255
+                    },
+                    {
+                        "id":  120,
+                        "full_name":  "Dealer Center 20",
+                        "city":  "Topeka",
+                        "state":  "Kansas",
+                        "address":  "120 Main Street",
+                        "zip":  "60020",
+                        "latitude":  37.92,
+                        "longitude":  -120.84
+                    }
+                ]
 }
 
 Exit Code: 0

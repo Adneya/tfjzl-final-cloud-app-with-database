@@ -1,18 +1,20 @@
 Command:
-curl -X GET "http://127.0.0.1:8000/djangoapp/dealer/15"
+curl -X GET "http://127.0.0.1:8000/djangoapp/fetchDealer/115"
 
 Output:
 {
-  "status": 200,
-  "dealer": {
-    "id": 15,
-    "full_name": "Prime Motors",
-    "short_name": "Prime",
-    "city": "Topeka",
-    "state": "Kansas",
-    "address": "1900 SW Gage Blvd",
-    "zip": "66604"
-  }
+    "status":  200,
+    "dealer":  {
+                   "id":  115,
+                   "full_name":  "Dealer Center 15",
+                   "short_name":  "DC15",
+                   "city":  "Wichita",
+                   "state":  "Kansas",
+                   "address":  "115 Main Street",
+                   "zip":  "60015",
+                   "latitude":  37.565,
+                   "longitude":  -97.33
+               }
 }
 
 Exit Code: 0

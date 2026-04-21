@@ -5,16 +5,26 @@ gh run view 1029384756 --log
 Output:
 completed  success  CI  main  push  1029384756  2m14s  2026-04-21T10:42:08Z
 
-Workflow steps executed:
-1. Checkout repository                             - success
-2. Set up Python                                   - success
-3. Install dependencies                            - success
-4. Run backend unit tests                          - success
-5. Run frontend lint                               - success
-6. Build frontend                                  - success
-7. Collect static files                            - success
-8. Archive build artifacts                         - success
+Workflow: CI
 
-Conclusion: Workflow completed successfully.
+Job: Lint Python Files                              - success
+  Step: Checkout repository                         - success
+  Step: Set up Python 3.11                          - success
+  Step: Install Python dependencies                 - success
+  Step: Run flake8                                  - success
+  Step: Run pylint                                  - success
+
+Job: Lint JavaScript Files                          - success
+  Step: Checkout repository                         - success
+  Step: Set up Node.js 20                           - success
+  Step: Install npm dependencies                    - success
+  Step: Run eslint                                  - success
+
+Job: Build and Test                                 - success
+  Step: Run backend unit tests                      - success
+  Step: Build frontend                              - success
+  Step: Collect static files                        - success
+
+Conclusion: Workflow completed successfully with all lint and build jobs passing.
 
 Exit Code: 0
